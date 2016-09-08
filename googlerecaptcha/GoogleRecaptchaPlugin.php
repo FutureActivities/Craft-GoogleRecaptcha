@@ -1,8 +1,9 @@
 <?php
 
 /*
+* Google reCaptcha
 *
-* reCaptcha for Craft Main Plugin File
+* Forked from reCaptcha for Craft Main Plugin File
 * Author: Aaron Berkowitz (@asberk)
 * https://github.com/aberkie/craft-recaptcha
 *
@@ -16,17 +17,17 @@ class GoogleRecaptchaPlugin extends BasePlugin
 	{
 		return Craft::t('Google reCAPTCHA');
 	}
-	
+
 	function getVersion()
 	{
 		return '1.0';
 	}
-	
+
 	function getDeveloper()
 	{
 		return 'Nzime, Aaron Berkowitz';
 	}
-	
+
 	function getDeveloperUrl()
 	{
 		return 'http://nzime.com';
@@ -39,16 +40,16 @@ class GoogleRecaptchaPlugin extends BasePlugin
 			'secretKey' => array(AttributeType::Mixed, 'default' => '')
 		);
 	}
-	
+
 	public function init()
 	{
 		craft()->on('users.onBeforeSaveUser', function(Event $event) {
-        
+
             $captcha = craft()->request->getPost('g-recaptcha-response');
-            
+
             if (is_null($captcha))
             	return;
-            
+
             if (!craft()->googleRecaptcha_verify->verify($captcha))
             {
                 $user = $event->params['user'];
