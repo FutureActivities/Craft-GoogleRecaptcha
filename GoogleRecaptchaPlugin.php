@@ -25,12 +25,12 @@ class GoogleRecaptchaPlugin extends BasePlugin
 
 	function getDeveloper()
 	{
-		return 'Nzime, Aaron Berkowitz';
+		return 'Future Activities, Aaron Berkowitz';
 	}
 
 	function getDeveloperUrl()
 	{
-		return 'http://nzime.com';
+		return 'https://github.com/FutureActivities/Craft-GoogleRecaptcha';
 	}
 
 	protected function defineSettings()
