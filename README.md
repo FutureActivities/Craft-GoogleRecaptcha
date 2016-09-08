@@ -35,6 +35,3 @@ To verify a user's input, call the plugin's verify service from your own plugin:
 	} else {
 		//Uh oh...its a robot. Don't process this form!
 	}
-
-##Roadmap
-Currently this only supports the standard reCAPTCHA widget, but I hope to add some capabilities to adjust the styling and functionality.
