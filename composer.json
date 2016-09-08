@@ -1,6 +1,6 @@
 
 {
-    "name": "FutureActivities/Craft-GoogleRecaptcha",
+    "name": "futureactivities/craft-googlerecaptcha",
 	"minimum-stability": "dev",
     "description": "Display Google's new reCaptcha form widget and validate responses.",
     "type": "craft-plugin",

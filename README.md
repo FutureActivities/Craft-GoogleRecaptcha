@@ -1,5 +1,5 @@
 # Google reCAPTCHA for Craft CMS
-Craft plugin to dispaly Google's new reCaptcha form widget and validate responses.
+Craft plugin to display Google's new reCaptcha form widget and validate responses.
 
 ##Forked
 Forked from https://github.com/aberkie/craft-recaptcha
@@ -8,6 +8,7 @@ Additional features:
 
 - Uses a hook to verify the captcha when saving a user
 - Returns error messages in the same way the account field validation works
+- Composer ready
 
 ##Install
 1. Upload entire recaptcha directory to craft/plugins on your server.
